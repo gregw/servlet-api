@@ -19,6 +19,7 @@
 package jakarta.servlet;
 
 import jakarta.servlet.descriptor.JspConfigDescriptor;
+import jakarta.servlet.http.HttpServletMapping;
 import jakarta.servlet.http.HttpServletRequest;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -1544,6 +1545,7 @@ public interface ServletContext {
      * <li>{@link ServletContext#getResourcePaths(String)}</li>
      * <li>{@link AsyncContext#dispatch(String)}</li>
      * <li>{@link AsyncContext#dispatch(ServletContext, String)}</li>
+     * <li>{@link HttpServletMapping#getMatchValue()}</li>
      * </ul>
      * for the purposes of these modes:
      * <ul>
